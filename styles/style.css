@@ -6,10 +6,13 @@
     --blanco: #ffffff;
 }
 /* Globales */
+
+
 html {
     font-size: 62.5%;
     box-sizing: border-box; /* Hack para Box Model*/
     scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -153,6 +156,14 @@ h1,h2,h3 {
 .habilidades, .navegacion-principal, .formulario {
     scroll-snap-align: center;
     scroll-snap-stop: always;
+}
+
+/* Sobre mí*/
+
+.sobremi{
+    line-height: 1.5;
+    text-align: center;
+    margin: 5rem;
 }
 
 /* habilidades */
