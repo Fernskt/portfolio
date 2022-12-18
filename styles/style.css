@@ -278,3 +278,15 @@ h1,h2,h3 {
     border-radius: 1rem;
 }
 
+.mi-seccion {
+    /* Estilos de la animación */
+    transition: all 1s ease;
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  
+  .mi-seccion.active {
+    /* Estilos de la animación cuando está activa */
+    transform: translateY(0);
+    opacity: 1;
+  }
