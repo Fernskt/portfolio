@@ -13,6 +13,7 @@ html {
     box-sizing: border-box; /* Hack para Box Model*/
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
+    animation: aparecer 1.5s;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -22,6 +23,29 @@ body {
     font-size: 16px; /* 1rem = 10px*/
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100% );
+}
+/*header{
+    display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   align-items: center;
+}
+.logo {
+   
+    width: 20rem;
+    height: 7rem;
+    
+}
+*/
+@media (min-width: 678px) {
+    header {
+        background-image: url(../img/arg-programa.png);
+        background-repeat: no-repeat;
+        background-size: 20rem;
+    
+}
+
+    
 }
 
 .boton {
@@ -68,8 +92,10 @@ h1,h2,h3 {
 
 /*Titulos*/
 
+
 .titulo span {
     font-size: 2rem;
+   
     
 }
 
@@ -290,3 +316,13 @@ h1,h2,h3 {
     transform: translateY(0);
     opacity: 1;
   }
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
