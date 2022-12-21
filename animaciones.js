@@ -19,6 +19,4 @@ window.addEventListener('scroll', function() {
     });
   });
   
-  
-  
-  
+ 

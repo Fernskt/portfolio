@@ -37,16 +37,8 @@ body {
     
 }
 */
-@media (min-width: 678px) {
-    header {
-        background-image: url(../img/arg-programa.png);
-        background-repeat: no-repeat;
-        background-size: 20rem;
-    
-}
 
-    
-}
+
 
 .boton {
     background-color: var(--primario);
@@ -61,16 +53,39 @@ body {
     border: none;
     width: 90%;
     text-align: center;
+    position: relative;
+    overflow: hidden;
     
+}
+.boton span{
+    position: relative;
+    z-index: 2;
+    transition: .5s ease-in-out all;
 }
 @media (min-width: 768px) {
     .boton{
         width: auto;
     }
-}
+} /* Efecto botones*/
 
-.boton:hover {
+.boton::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transition: .5s ease-in-out all;
+    border-radius: 100px;
+    transform-origin: center;
+
+}
+.boton:hover::after {
     cursor: pointer;
+    transform: scale(200);
+    background: var(--secundario);
 }
 
 /* Tipografia*/ 
@@ -103,7 +118,37 @@ h1,h2,h3 {
     max-width: 100rem;
     margin: 0 auto;
 }
+/* Header */
 
+@media (min-width: 768px) {
+    header {
+        background-image: url(../img/arg-programa.png);
+        background-repeat: no-repeat;
+        background-size: 20rem;
+        background-position-y: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;  
+        
+    }   
+    
+}
+@media (min-width: 768px) {
+    .logo{
+        width: 20rem;
+        
+    }
+    .red{
+    margin-left: 10px;
+    margin-right: 10px; 
+    }
+}
+@media (max-width: 768px) {
+    .red {
+      display: none;
+    }
+  }
 
 
 .nav-bg {
@@ -140,14 +185,13 @@ h1,h2,h3 {
     font-weight: 700;
     padding: 1rem;
     transition: background-color .5s;
-    
-    
-}
-.navegacion-principal a:hover {
+  }
+  
+  .navegacion-principal a:hover {
     background-color: var(--secundario);
-    color: var(--oscuro);
     
-}
+  }
+
 
 .hero {
     background-image: url(../img/hero.jpg);
@@ -191,6 +235,28 @@ h1,h2,h3 {
     text-align: center;
     margin: 5rem;
 }
+
+.foto{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img{
+    width: 18rem;
+    border-radius: 50%;
+    border: 5px;
+    border-color: var(--blanco);
+    border-style: solid;
+    box-shadow: 0px 0px 0px 6px #4d6994;
+    margin-bottom: 3rem;
+    transition: width .5s;
+}
+
+.foto .img:hover{
+    width: 20rem;
+}
+
 
 /* habilidades */
 
@@ -261,9 +327,7 @@ h1,h2,h3 {
 
 
 
-.campo textarea {
-    width: 100%;
-}
+
 .campo {
     margin-bottom: 1rem;
 }
@@ -280,6 +344,7 @@ h1,h2,h3 {
     width: 100%;
     height: 20rem;
     resize: none;
+    
 }
 
 .imput-text {
@@ -291,6 +356,7 @@ h1,h2,h3 {
 }
 
 .enviar .boton {
+    margin-top: 2rem;
     width: 100%;
 }
 
