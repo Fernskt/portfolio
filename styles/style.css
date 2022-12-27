@@ -91,25 +91,28 @@ body {
 /* Tipografia*/ 
 h1 {
     font-size: 3.8rem;
+    text-align: center;
 }
 
 h2 {
     font-size: 2.8rem;
+    
 }
 
 h3 {
     font-size: 1.8rem;
+    
 }
 
-h1,h2,h3 {
-    text-align: center;
-}
 
 /*Titulos*/
 
-
+.titulo{
+    font-size: 4rem;
+}
 .titulo span {
     font-size: 2rem;
+   
    
     
 }
@@ -122,6 +125,8 @@ h1,h2,h3 {
 
 @media (min-width: 768px) {
     header {
+        height: 9rem;
+        margin-bottom: 0.5rem;
         background-image: url(../img/arg-programa.png);
         background-repeat: no-repeat;
         background-size: 20rem;
@@ -216,6 +221,7 @@ h1,h2,h3 {
 
 .contenido-hero h2, .contenido-hero p {
     color: var(--blanco);
+    text-align: center;
 }
 
 .ubicacion {
@@ -234,6 +240,7 @@ h1,h2,h3 {
     line-height: 1.5;
     text-align: center;
     margin: 5rem;
+    margin-bottom: 5rem;
 }
 
 .foto{
@@ -257,16 +264,66 @@ h1,h2,h3 {
     width: 20rem;
 }
 
+/*Educacion*/
+
+#educacion{
+    margin-top: 5rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .miEducacion section{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+         margin-bottom: 5rem;
+         margin-right: 10rem;
+         column-gap: 5rem;
+        
+     }
+     .eduLogo{
+        grid-row: 1 / 9;
+        margin-top: 2rem;
+        margin-left: 15rem;
+        
+    }
+    
+}
+
+
+
+.eduLogo{
+   
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+
+
+.miEducacion span{
+    font-size: 1.8rem;
+    color: var(--primario);
+}
+
+ul{
+    padding-left: 1.5rem;
+}
+
+
 
 /* habilidades */
 
-
+#habilidades{
+    margin-top: 5rem;
+}
 
 @media (min-width: 768px) {
     .habilidades {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -290,6 +347,12 @@ h1,h2,h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Contacto*/
+
+#contacto{
+    margin: 5rem;
 }
 
 .formulario {
@@ -369,6 +432,8 @@ h1,h2,h3 {
     color: var(--blanco);
     border-radius: 1rem;
 }
+
+/*Animaciones*/
 
 .mi-seccion {
     /* Estilos de la animación */
