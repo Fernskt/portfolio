@@ -221,7 +221,11 @@ h3 {
 
 .contenido-hero h2, .contenido-hero p {
     color: var(--blanco);
-    text-align: center;
+   
+}
+
+#text {
+    margin-left: 5rem;
 }
 
 .ubicacion {
