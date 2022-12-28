@@ -61,7 +61,7 @@
   hr {
     box-sizing: content-box; /* 1 */
     color: rgb(255, 255, 255); /* 2 */
-    width: 80rem; /* 1 */
+    width: 70%; /* 1 */
      
   }
   

@@ -120,7 +120,14 @@ h3 {
 .contenedor {
     max-width: 100rem;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
+
+.contenedor-nav{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
 /* Header */
 
 @media (min-width: 768px) {
@@ -149,8 +156,20 @@ h3 {
     margin-right: 10px; 
     }
 }
+
+
+
 @media (max-width: 768px) {
-    .red {
+    header{
+        height: 13rem;
+        background-image: url(../img/logo.png);
+        background-size: 10rem;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+    }
+
+    .redes {
       display: none;
     }
   }
@@ -173,9 +192,9 @@ h3 {
 }
 
 .sombra {
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(102,102,102,0.77);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(102,102,102,0.77);
-    box-shadow: 0px 5px 15px 0px rgba(102,102,102,0.77);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(170, 170, 170, 0.77);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(170, 170, 170, 0.77);
+    box-shadow: 0px 5px 15px 0px rgba(170, 170, 170, 0.77);
     background-color: var(--blanco);
     padding: 2rem;
     border-radius: 1rem;
@@ -280,20 +299,21 @@ h3 {
     .miEducacion section{
         display: grid;
         grid-template-columns: 1fr 2fr;
-         margin-bottom: 5rem;
+        
          margin-right: 10rem;
          column-gap: 5rem;
         
      }
-     .eduLogo{
+     .edu{
         grid-row: 1 / 9;
         margin-top: 2rem;
-        margin-left: 15rem;
-        
+        margin-left: 15rem; 
     }
     
 }
-
+.miEducacion section {
+    margin-bottom: 7rem;
+}
 
 
 .eduLogo{
@@ -302,6 +322,11 @@ h3 {
     height: 12rem;
     border-radius: 50%;
 }
+.edu {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
@@ -428,13 +453,25 @@ ul{
 }
 
 /* Footer*/
-.footer {
+@media (min-width: 768px) {
+    .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
+}
+}
+
+.footer {
+   text-align: center;
     background-color: #4d6994;
     padding: 1rem;
     margin-top: 2rem;
     color: var(--blanco);
     border-radius: 1rem;
+}
+.redes_footer{
+    filter: invert();
 }
 
 /*Animaciones*/
