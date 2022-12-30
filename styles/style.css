@@ -5,25 +5,32 @@
     --terciario: #ffc219;
     --blanco: #ffffff;
 }
+
 /* Globales */
 
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box; /* Hack para Box Model*/
+    box-sizing: border-box;
+    /* Hack para Box Model*/
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     animation: aparecer 1.5s;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
+}
 
 body {
-    font-size: 16px; /* 1rem = 10px*/
+    font-size: 16px;
+    /* 1rem = 10px*/
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100% );
+    background-image: linear-gradient(to top, #d3e6fa 0%, var(--blanco) 100%);
 }
+
 /*header{
     display: flex;
    justify-content: space-around;
@@ -55,26 +62,30 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
-    
+
 }
-.boton span{
+
+.boton span {
     position: relative;
     z-index: 2;
     transition: .5s ease-in-out all;
 }
+
 @media (min-width: 768px) {
-    .boton{
+    .boton {
         width: auto;
     }
-} /* Efecto botones*/
+}
 
-.boton::after{
+/* Efecto botones*/
+
+.boton::after {
     content: "";
     width: 1px;
     height: 1px;
     background: none;
     position: absolute;
-    
+
     top: 50%;
     left: 50%;
     transition: .5s ease-in-out all;
@@ -82,13 +93,14 @@ body {
     transform-origin: center;
 
 }
+
 .boton:hover::after {
     cursor: pointer;
     transform: scale(200);
     background: var(--secundario);
 }
 
-/* Tipografia*/ 
+/* Tipografia*/
 h1 {
     font-size: 3.8rem;
     text-align: center;
@@ -96,25 +108,26 @@ h1 {
 
 h2 {
     font-size: 2.8rem;
-    
+
 }
 
 h3 {
     font-size: 1.8rem;
-    
+
 }
 
 
 /*Titulos*/
 
-.titulo{
+.titulo {
     font-size: 4rem;
 }
+
 .titulo span {
     font-size: 2rem;
-   
-   
-    
+
+
+
 }
 
 .contenedor {
@@ -123,7 +136,7 @@ h3 {
     margin-bottom: 2rem;
 }
 
-.contenedor-nav{
+.contenedor-nav {
     max-width: 100rem;
     margin: 0 auto;
 }
@@ -141,26 +154,28 @@ h3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;  
-        
-    }   
-    
-}
-@media (min-width: 768px) {
-    .logo{
-        width: 20rem;
-        
+        align-items: center;
+
     }
-    .red{
-    margin-left: 10px;
-    margin-right: 10px; 
+
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 20rem;
+
+    }
+
+    .red {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
 
 
 @media (max-width: 768px) {
-    header{
+    header {
         height: 13rem;
         background-image: url(../img/logo.png);
         background-size: 10rem;
@@ -170,18 +185,19 @@ h3 {
     }
 
     .redes {
-      display: none;
+        display: none;
     }
-  }
+}
 
 
 .nav-bg {
     background-color: var(--primario);
 }
+
 .navegacion-principal {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 @media (min-width: 768px) {
@@ -209,12 +225,12 @@ h3 {
     font-weight: 700;
     padding: 1rem;
     transition: background-color .5s;
-  }
-  
-  .navegacion-principal a:hover {
+}
+
+.navegacion-principal a:hover {
     background-color: var(--secundario);
-    
-  }
+
+}
 
 
 .hero {
@@ -225,6 +241,7 @@ h3 {
     margin-bottom: 2rem;
     position: relative;
 }
+
 .contenido-hero {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
@@ -238,9 +255,10 @@ h3 {
 
 }
 
-.contenido-hero h2, .contenido-hero p {
+.contenido-hero h2,
+.contenido-hero p {
     color: var(--blanco);
-   
+
 }
 
 #text {
@@ -249,79 +267,86 @@ h3 {
 
 .ubicacion {
     display: flex;
-    
+
 }
 
-.habilidades, .navegacion-principal, .formulario {
+.habilidades,
+.navegacion-principal,
+.formulario {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
 
 /* Sobre mí*/
 
-.sobremi{
+.sobremi {
     line-height: 1.5;
     text-align: center;
     margin: 5rem;
     margin-bottom: 5rem;
 }
 
-.foto{
+
+
+.foto {
     display: flex;
     justify-content: center;
-    
 }
 
-.img{
+.img {
     width: 18rem;
     border-radius: 50%;
     border: 5px;
     border-color: var(--blanco);
     border-style: solid;
     box-shadow: 0px 0px 0px 6px #4d6994;
-    margin-bottom: 3rem;
-    transition: width .5s;
+    margin: 1rem 0 1.5rem;
+    transition: transform 0.5s;
 }
 
-.foto .img:hover{
-    width: 20rem;
+.foto .img:hover {
+    transform: scale(1.1);
 }
 
 /*Educacion*/
 
-#educacion{
+#educacion {
     margin-top: 5rem;
 }
 
 
 
 @media (min-width: 768px) {
-    .miEducacion section{
+    .miEducacion section {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        
-         margin-right: 10rem;
-         column-gap: 5rem;
-        
-     }
-     .edu{
+
+        margin-right: 10rem;
+        column-gap: 5rem;
+
+    }
+
+    .edu {
         grid-row: 1 / 9;
         margin-top: 2rem;
-        margin-left: 15rem; 
+        margin-left: 15rem;
     }
-    
+
 }
+
 .miEducacion section {
     margin-bottom: 7rem;
 }
 
 
-.eduLogo{
-   
+.eduLogo {
+
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
+
 }
+
 .edu {
     display: flex;
     justify-content: center;
@@ -330,12 +355,12 @@ h3 {
 
 
 
-.miEducacion span{
+.miEducacion span {
     font-size: 1.8rem;
     color: var(--primario);
 }
 
-ul{
+ul {
     padding-left: 1.5rem;
 }
 
@@ -343,7 +368,7 @@ ul{
 
 /* habilidades */
 
-#habilidades{
+#habilidades {
     margin-top: 5rem;
 }
 
@@ -378,15 +403,133 @@ ul{
     align-items: center;
 }
 
+
+/*Skills de Habilidades*/
+
+.skills{
+    display: flex;
+    justify-content: center;
+}
+
+.skill{
+    margin: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .skill{
+        margin: 3rem 10rem 3rem 10rem;
+        text-align: center;
+    }
+}
+
+.progress-circle-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+@media (min-width: 768px) {
+    .progress-circle-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+
+
+.progress-circle {
+    position: relative;
+    display: inline-block;
+    margin: 1rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+}
+
+.progress-circle:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+}
+
+.progress-circle.animation{
+    -webkit-animation: colorload 2s;
+    animation: colorload 2s;
+}
+
+.progress-circle span {
+    font-size: 1rem;
+    color: var(--primario);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: -45px;
+    margin-top: -45px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+}
+
+.progress-circle span:after {
+    content: "%";
+    font-weight: 600;
+    color: #8b8b8b;
+}
+.progress-circle.progress-65:after { 
+    background-image: linear-gradient(-36deg, #4d6994 50%, transparent 50%, transparent), linear-gradient(270deg, #4d6994 50%, #ebebeb 50%, #ebebeb); 
+}
+.progress-circle.progress-78:after { 
+    background-image: linear-gradient(10.8deg, #4d6994 50%, transparent 50%, transparent), linear-gradient(270deg, #4d6994 50%, #ebebeb 50%, #ebebeb);
+}
+.progress-circle.progress-75:after {
+    background-image: linear-gradient(0deg, #4d6994 50%, transparent 50%, transparent), linear-gradient(270deg, #4d6994 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-70:after {
+    background-image: linear-gradient(-18deg, #4d6994 50%, transparent 50%, transparent), linear-gradient(270deg, #4d6994 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-35:after {
+    background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(216deg, #4d6994 50%, #ebebeb 50%, #ebebeb);
+}
+
+.progress-circle.progress-50:after {
+    background-image: linear-gradient(-90deg, #4d6994 50%, transparent 50%, transparent), linear-gradient(270deg, #4d6994 50%, #ebebeb 50%, #ebebeb);
+}
+
+/*Animaciones de los circulos*/
+
+@-webkit-keyframes colorload {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
 /*Contacto*/
 
-#contacto{
+#contacto {
     margin: 5rem;
 }
 
 .formulario {
     background-color: grey;
-    width: min(60rem, 100%); /* utiliza el valor mas chico*/
+    width: min(60rem, 100%);
+    /* utiliza el valor mas chico*/
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -404,6 +547,7 @@ ul{
     margin-bottom: 2rem;
     color: var(--blanco);
 }
+
 @media (min-width: 768px) {
     .contenedor-campo {
         display: grid;
@@ -411,8 +555,9 @@ ul{
         grid-template-rows: auto auto 20rem;
         column-gap: 1rem;
     }
+
     .campo:nth-child(3),
-    .campo:nth-child(4){
+    .campo:nth-child(4) {
         grid-column: 1 / 3;
     }
 }
@@ -436,7 +581,7 @@ ul{
     width: 100%;
     height: 20rem;
     resize: none;
-    
+
 }
 
 .imput-text {
@@ -454,23 +599,30 @@ ul{
 
 /* Footer*/
 @media (min-width: 768px) {
-    .footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
+    .footer {
+        background-image: url(../img/APLogo.png);
+        background-repeat: no-repeat;
+        background-size: 15rem;
+        background-position-y: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+    }
 }
 
 .footer {
-   text-align: center;
+    text-align: center;
     background-color: #4d6994;
     padding: 1rem;
     margin-top: 2rem;
     color: var(--blanco);
     border-radius: 1rem;
+
 }
-.redes_footer{
+
+.redes_footer {
     filter: invert();
 }
 
@@ -481,20 +633,20 @@ ul{
     transition: all 1s ease;
     transform: translateY(100px);
     opacity: 0;
-  }
-  
-  .mi-seccion.active {
+}
+
+.mi-seccion.active {
     /* Estilos de la animación cuando está activa */
     transform: translateY(0);
     opacity: 1;
-  }
+}
 
-  @keyframes aparecer {
+@keyframes aparecer {
     from {
-      opacity: 0;
+        opacity: 0;
     }
+
     to {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
+}
