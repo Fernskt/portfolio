@@ -30,7 +30,7 @@ window.addEventListener('scroll', function() {
 /*Animacion Maquina de escribir y linea de comando*/
 
   let i = 0;
-let text = ">Desarrollador web Fullstack ";
+let text = ">Desarrollador web Fullstack Jr.";
 
 function typeWriter() {
   if (i < text.length) {
