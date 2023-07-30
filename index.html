@@ -8,19 +8,18 @@
     <title>Fernando Hasperue Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
 
-
 </head>
 
 
 <body>
-   
+
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/animaciones.js"></script>
 
@@ -29,16 +28,14 @@
     <div class="responsivo">
 
         <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid fixed-top">
+            <div class="container-fluid ">
                 <div class="redes">
                     <a class="red" href="https://www.linkedin.com/in/hasperue" target="_blank"> <img src="img/in.png"
                             alt="in" width="30" height="30"></a>
                     <a class="red" href="https://github.com/Fernskt/portfolio" target="_blank"> <img src="img/fb.png"
                             alt="fb" width="30" height="30"></a>
                     <a class="red" href="#"> <img src="img/wa.png" alt="wa" width="30" height="30"></a>
-                    <a class="red" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" *ngIf="!isLogged">
-                        <img src="img/login.png" alt="wa" width="30" height="30"></a>
-
+                   
 
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -82,14 +79,7 @@
         </nav>
     </div>
 
-    <div class="flotante">
-        <a class="redf" href="https://www.linkedin.com/in/hasperue" target="_blank"> <img src="img/in.png"
-            alt="in" width="30" height="30"></a>
-    <a class="redf" href="https://github.com/Fernskt/portfolio" target="_blank"> <img src="img/fb.png"
-            alt="fb" width="30" height="30"></a>
-    <a class="redf" href="https://wa.me/1560428780" target="_blank"> <img src="img/wa.png" alt="wa" width="30" height="30"></a>
-   
-    </div>
+    
 
     <header class="barraRedes">
         <div class="logo">
@@ -101,9 +91,7 @@
             <a class="red" href="https://github.com/Fernskt/portfolio" target="_blank"> <img src="img/fb.png" alt="fb"
                     width="30" height="30"></a>
             <a class="red" href="https://wa.me/1560428780"> <img src="img/wa.png" alt="wa" width="30" height="30"></a>
-            <a class="red" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" *ngIf="!isLogged"> <img
-                    src="img/login.png" alt="wa" width="30" height="30"></a>
-
+        
 
         </div>
         <!--<img class="logo" src="img/logo.png" alt="logo"> -->
@@ -128,7 +116,11 @@
 
     <section class="hero">
         <div class="contenido-hero">
-            <h2 class="titulo">Fernando Hasperué <br> <span id="text">Desarrollador Fullstack Jr. </span> </h2>
+
+            <h2 class="titulo">Fernando Hasperué </h2>
+            <h3 id="text">>Desarrollador web Fullstack</h3>
+
+
 
             <div class="ubicacion">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44"
@@ -165,12 +157,14 @@
                 <section>
                     <h2>¡Hola!</h2>
                     <p>
-                        mi nombre es Fernando y soy un apasionado por la programación. Actualmente me encuentro estudiando Desarrollo Web Full Stack en Argentina
-                        Programa. Me encanta aprender nuevas habilidades y tecnologías para mejorar en mi carrera
+                        Mi nombre es Fernando y soy un apasionado por la programación. Actualmente me encuentro
+                        estudiando Desarrollo Web Full Stack en Egg Cooperation. Me encanta aprender nuevas habilidades
+                        y tecnologías para mejorar en mi carrera
                         profesional.
                         Suelo usar tecnologías como HTML, CSS, JavaScript, Java y
-                        Typescript, junto
-                        con frameworks como Angular, en mis proyectos. También utilizo Git y Github para colaborar con otros
+                        MySQL, junto
+                        con librerías como React, en mis proyectos. También utilizo Git y Github para colaborar con
+                        otros
                         desarrolladores y
                         seguir aprendiendo de ellos.<br>
                         Me interesa mucho trabajar con metodologías ágiles como Scrum. Además, mis habilidades blandas
@@ -178,7 +172,7 @@
                         comunicación, liderazgo y trabajo en equipo, lo que me ha permitido llevar mis proyectos de
                         desarrollo web
                         a un nivel superior. <br>
-                       
+
                         Considero que el aprendizaje continuo es clave para mi carrera profesional y siempre estoy
                         buscando
                         mejorar mis habilidades y conocimientos para trabajar en equipo y lograr objetivos con
@@ -197,7 +191,6 @@
 
             <h1 id="educacion">Educación <br> <br> </h1>
 
-
             <section class="mi-seccion">
 
                 <div class="edu">
@@ -206,10 +199,10 @@
                 <h2> Teclab Instituto Técnico superior <br> <span>Tecnicatura superior en Programación</span></h2>
                 <ul>
                     <li>Desarrollo de software sobre plataformas web en HTML, CSS y Javascript.</li>
-                    <li>Configurar e implementar bases de datos utilizando SQL y Oracle.</li>
-                    <li>Programar en dispositivos móviles: JAVA y desarrollos para Android. Software
-                        development kit (SDK). Android Studio y Android virtual device (AVD)</li>
+                    <li>Configurar e implementar bases de datos utilizando PostgreSQL.</li>
                     <li>Crear apps con Material Design y Responsive Design</li>
+                    <li>Control de Versiones: Git y GitHub</li>
+                    <li>Habilidades blandas: Trabajo en Equipo y Liderazgo, entre otras</li>
                 </ul>
             </section>
 
@@ -221,19 +214,40 @@
                 <h2> Argentina Programa <br> <span>#SéProgramar</span> </h2>
                 <ul>
                     <li><b>Fundamentos de la programación:</b>
-                        variables, operadores, estructuras de control de flujo, funciones, etc. Al aprender estos
-                        conceptos,
-                        pude entender cómo funcionan los programas y cómo construir los míos. <br> <br></li>
+                        variables, operadores, estructuras de control de flujo, funciones, Arreglos, etc. con
+                        pseudocódico utilizando PseINT <br> <br></li>
                     <li><b>Programación Imperativa: </b>
                         Al aprender programación imperativa, con Javascript, comprendí cómo escribir programas que
                         modifiquen
                         el estado de una
                         aplicación y cómo controlar el flujo de un programa. <br><br></li>
-                    <li><b>Programacióon Orientada a Objetos: </b>
+                    <li><b>Programación Orientada a Objetos: </b>
                         Utilizando el lenguaje Ruby, aprendí cómo crear y utilizar objetos en los programas y cómo
                         diseñar aplicaciones orientadas a objetos.</li>
                 </ul>
 
+            </section>
+
+            <section class="mi-seccion">
+
+                <div class="edu">
+                    <img class="eduLogo" src="img/egg.jpg" alt="Teclab">
+                </div>
+                <h2> Egg Cooperation <br> <span>Desarrollo Web FullStack</span></h2>
+                <h4>Frontend:</h4>
+                <ul>
+                    <li>HTML(HyperText Markup Language) </li>
+                    <li>CSS (Cascading Style Sheets)</li>
+                    <li>JavaScript</li>
+                    <li>React JS</li>
+                </ul>
+                <h4>BackEnd:</h4>
+                <ul>
+                    <li>JAVA, Programación Orientada a Objetos (POO) </li>
+                    <li>MySQL utilizando Base de Datos Relacionales</li>
+                    <li>JPA (Java Persistence API) y JDBC (Java Database Connectivity)</li>
+                    <li>Spring Boot</li>
+                </ul>
             </section>
 
 
@@ -243,13 +257,13 @@
         <div class="contenedor sombra ">
 
             <h1 id="habilidades">Mis Conocimientos</h1>
-        
+
             <div class="habilidades">
                 <section class="habilidad mi-seccion">
                     <h3>Descripción</h3>
                     <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44"
-                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <circle cx="12" cy="12" r="9" />
@@ -268,12 +282,12 @@
                         como
                         Git y GitHub para mejorar el flujo de trabajo.</p>
                 </section>
-        
+
                 <section class="habilidad mi-seccion">
                     <h3> Front End</h3>
                     <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="44"
-                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
@@ -283,16 +297,16 @@
                         </svg>
                     </div>
                     <p>Tengo los conocimientos necesarios para diseñar, desarrollar y mantener un sitio web. Esto
-                    incluye el
-                     diseño de
-                    interfaces de usuario, la optimización de sitios web
-                    para
-                    una mejor
-                    experiencia de usuario y la implementación de diseños responsivos para diferentes dispositivos.
-        
+                        incluye el
+                        diseño de
+                        interfaces de usuario, la optimización de sitios web
+                        para
+                        una mejor
+                        experiencia de usuario y la implementación de diseños responsivos para diferentes dispositivos.
+
                     </p>
                 </section>
-        
+
                 <section class="habilidad mi-seccion">
                     <h3>Back End</h3>
                     <div class="iconos">
@@ -305,196 +319,214 @@
                             <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
                         </svg>
                     </div>
-                    <p>Tengo conocimientos en tecnologías como Java, Node.js, entre otros; así como también con bases de datos
-                        como MySQL y PostgreSQL. Además tengo habilidades en API REST, protocolos de seguridad, almacenamiento
+                    <p>Tengo conocimientos en tecnologías como Java, Node.js, entre otros; así como también con bases de
+                        datos
+                        como MySQL y PostgreSQL. Además tengo habilidades en API REST, protocolos de seguridad,
+                        almacenamiento
                         de archivos y otras tecnologías relacionadas.</p>
                 </section>
-        
-        
+
+
             </div><!--.habilidades-->
         </div><!--contenedorsombra-->
 
 
         <!-- SKILLS -->
 
-        
-<div class="contenedor sombra">
-        
-    <div>
 
-        <h1 id="skills">Habilidades</h1>
+        <div class="contenedor sombra">
 
-        <div class="skills">
-            <div class="progress-circle-container">
+            <div>
 
-               
-                <div class="skill">
-                    <h3>HTML5</h3>
-                    <div class="progress-circle progress-78"><span><img class="skillsimg" src="img/html.png" alt="js"></span></div>
+                <h1 id="skills">Habilidades</h1>
+
+                <div class="skills">
+                    <div class="progress-circle-container">
+
+
+                        <div class="skill">
+                            <h3>HTML5</h3>
+                            <div class="progress-circle progress-78"><span><img class="skillsimg" src="img/html.png"
+                                        alt="js"></span></div>
+                        </div>
+                        <div class="skill">
+                            <h3>CSS3</h3>
+                            <div class="progress-circle progress-75"><span><img class="skillsimg" src="img/css.png"
+                                        alt="js"></span></div>
+                        </div>
+                        <div class="skill">
+                            <h3>JAVASCRIPT</h3>
+                            <div class="progress-circle progress-65"><span><img class="skillsimg" src="img/js.png"
+                                        alt="js"></span></div>
+                        </div>
+
+                        <div class="skill">
+                            <h3>REACT</h3>
+                            <div class="progress-circle progress-35"><span><img class="skillsimg" src="img/React.png"
+                                        alt="js"></span></div>
+                        </div>
+                        <div class="skill">
+                            <h3>JAVA</h3>
+                            <div class="progress-circle progress-50"><span><img class="skillsimg" src="img/java.png"
+                                        alt="js"></span></div>
+                        </div>
+                        <div class="skill">
+                            <h3>GITHUB</h3>
+
+                            <div class="progress-circle progress-65"><span><img class="skillsimg" src="img/github.png"
+                                        alt="js"></span></div>
+                        </div>
+                        <div class="skill">
+                            <h3>GIT</h3>
+                            <div class="progress-circle progress-70"><span><img class="skillsimg" src="img/git.jpg"
+                                        alt="js"></span></div>
+                        </div>
+                        <div class="skill">
+                            <h3>MySQL</h3>
+                            <div class="progress-circle progress-78"><span><img class="skillsimg" src="img/sql.png"
+                                        alt="js"></span></div>
+                        </div>
+                        <div class="skill">
+                            <h3>BOOTSTRAP</h3>
+                            <div class="progress-circle progress-75"><span><img class="skillsimg"
+                                        src="img/bootstrap.png" alt="js"></span></div>
+                        </div>
+
+
+                    </div>
+
                 </div>
-                <div class="skill">
-                    <h3>CSS3</h3>
-                    <div class="progress-circle progress-75"><span><img class="skillsimg" src="img/css.png" alt="js"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>JAVASCRIPT</h3>
-                    <div class="progress-circle progress-65"><span><img class="skillsimg" src="img/js.png" alt="js"></span></div>
-                </div>
-               
-                <div class="skill">
-                    <h3>ANGULAR</h3>
-                    <div class="progress-circle progress-35"><span><img class="skillsimg" src="img/Angular.png" alt="js"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>JAVA</h3>
-                    <div class="progress-circle progress-50"><span><img class="skillsimg" src="img/java.png" alt="js"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>GITHUB</h3>
-                    
-                    <div class="progress-circle progress-65"><span><img class="skillsimg" src="img/github.png" alt="js"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>GIT</h3>
-                    <div class="progress-circle progress-70"><span><img class="skillsimg" src="img/git.jpg" alt="js"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>MySQL</h3>
-                    <div class="progress-circle progress-78"><span><img class="skillsimg" src="img/sql.png" alt="js"></span></div>
-                </div>
-                <div class="skill">
-                    <h3>BOOTSTRAP</h3>
-                    <div class="progress-circle progress-75"><span><img class="skillsimg" src="img/bootstrap.png" alt="js"></span></div>
-                </div>
-    
-    
+
+
+            </div><!--Smi-seccion-->
+        </div><!--contenedor sombra-->
+
+        <!-- PROYECTOS -->
+
+        <div class="contenedor sombra proyectos">
+
+            <div class="mi-seccion">
+
+                <h1>Proyectos</h1><br>
+                <section>
+                    <h2 class="subtitulo">Calculadora de sueldos</h2>
+                    <div class="cont">
+
+
+                        <div class="carrusel">
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/calcu1.png" class="d-block w-100" alt="calculadora">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/calcu3.png" class="d-block w-100" alt="calculadora">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/calcu4.png" class="d-block w-100" alt="calculadora">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p>Ésta aplicación web ayuda a los trabajadores de OCA LOG S.A. a calcular su sueldo neto
+                            y bruto con precisión y eficiencia. La aplicación utiliza tecnologías web modernas como
+                            HTML5, CSS,
+                            Bootstrap y JavaScript y está actualizada con las últimas regulaciones fiscales y laborales
+                            para
+                            garantizar la precisión de los cálculos en todo momento. Además, la aplicación cuenta con
+                            una interfaz
+                            intuitiva y fácil de usar, y se han aplicado técnicas de experiencia de usuario para
+                            optimizar su
+                            efectividad.
+                        </p>
+                    </div>
+                </section>
+
             </div>
+        </div><!--contenedor sombra-->
 
-        </div>
-        
+        <div  id="contacto">
 
-    </div><!--Smi-seccion-->
-</div><!--contenedor sombra-->
+            <div class="mi-seccion hablemos">
 
-<!-- PROYECTOS -->
+                <h2>¡Hablemos!</h2><br>
+<div class="contacto-contenedor">
 
-<div class="contenedor sombra proyectos">
 
-    <div class="mi-seccion">
+                Si quieres chatear, colaborar o simplemente compartir ideas increíbles, aquí tienes dos formas de
+                ponerte en
+                contacto conmigo: <br> <br>
 
-        <h1>Proyectos</h1><br>
-        <section>
-            <h2 class="subtitulo">Calculadora de sueldos</h2>
-            <div class="cont">
+                <div class="contacto">
+                        <div class="contacto-whatsapp-linkedin">
+                           
 
-            
-            <div class="carrusel">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/calcu1.png" class="d-block w-100" alt="calculadora">
+                            <a class="redf" href="https://wa.me/1560428780" target="_blank"> <img src="img/wa.png"
+                                    alt="wa" width="30" height="30">WhatsApp</a>
                         </div>
-                        <div class="carousel-item">
-                            <img src="img/calcu3.png" class="d-block w-100" alt="calculadora">
+                        <div class="contacto-whatsapp-linkedin">
+                            
+
+                            <a class="redf " href="https://www.linkedin.com/in/hasperue" target="_blank"> <img
+                                    src="img/in.png" alt="in" width="30" height="30">LinkedIn</a>
                         </div>
-                        <div class="carousel-item">
-                            <img src="img/calcu4.png" class="d-block w-100" alt="calculadora">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
+
+                ¡Estoy ansioso por recibir tus mensajes y compartir un café (virtual o real) mientras trabajamos
+                juntos en cosas grandiosas! <br><br>
+
             </div>
-            <p>Ésta aplicación web ayuda a los trabajadores de OCA LOG S.A. a calcular su sueldo neto
-                y bruto con precisión y eficiencia. La aplicación utiliza tecnologías web modernas como HTML5, CSS,
-                Bootstrap y JavaScript y está actualizada con las últimas regulaciones fiscales y laborales para
-                garantizar la precisión de los cálculos en todo momento. Además, la aplicación cuenta con una interfaz
-                intuitiva y fácil de usar, y se han aplicado técnicas de experiencia de usuario para optimizar su
-                efectividad.
-            </p>
+                <div class="saludo">
+                    <h1> ¡Hasta pronto! </h1>
+                </div>
+
+
+
+            </div>
         </div>
-        </section>
 
-    </div><!--Sobre mi-->
-</div><!--contenedor sombra-->
-
-<!-- CONTACTO -->
-        <section>
-            <h1 id="contacto">contacto</h1>
-
-            <form class="formulario contenedor sombra mi-seccion">
-                <fieldset>
-                    <legend>Contáctame llenando los campos</legend>
-                    <div class="contenedor-campo">
-                        <div class="campo">
-                            <label>Nombre</label>
-                            <input class="imput-text" type="text" placeholder="Tu Nombre" />
-                        </div>
-
-                        <div class="campo">
-                            <label>Teléfono</label>
-                            <input class="imput-text" type="tel" placeholder="Tu Teléfono" />
-                        </div>
-
-                        <div class="campo">
-                            <label>Correo</label>
-                            <input class="imput-text" type="email" placeholder="Tu Correo">
-                        </div>
-
-                        <div class="campo">
-                            <label>Mensaje</label>
-                            <textarea class="imput-text"></textarea>
-                        </div>
-                    </div> <!-- .contenedor-campos-->
-
-                    <div class="enviar">
-                        <input class="boton" type="submit" value="Enviar">
-                    </div>
-
-
-
-                </fieldset>
-            </form>
-        </section>
     </main>
 
-<div class="totop">
-    <a class="redf" href="#"> <img src="img/top.png" alt="wa" width="30" height="30"></a>
-</div>
-    
-
-<!-- FOOTER -->
-
-<footer class="footer">
-    <div class="logo"></div>
-    <p>Todos los derechos reservados.©  Fernando Hasperué </p>
-    <div class="redes_footer">
-        <a class="red" href="https://www.linkedin.com/in/hasperue" target="_blank"> <img src="img/in.png" alt="in"
-                width="30" height="30"></a>
-        <a class="red" href="https://github.com/Fernskt/portfolio" target="_blank"> <img src="img/fb.png" alt="fb"
-                width="30" height="30"></a>
-        <a class="red" href="#"> <img src="img/wa.png" alt="wa" width="30" height="30"></a>
-        
-
+    <div class="totop">
+        <a class="resplandor" href="#"> <img src="img/top.png" alt="wa" width="30" height="30"></a>
     </div>
-</footer>
 
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="logo"></div>
+        <p>© Fernando Hasperué </p>
+        <div class="redes_footer">
+            <a class="red" href="https://www.linkedin.com/in/hasperue" target="_blank"> <img src="img/in.png" alt="in"
+                    width="30" height="30"></a>
+            <a class="red" href="https://github.com/Fernskt/portfolio" target="_blank"> <img src="img/fb.png" alt="fb"
+                    width="30" height="30"></a>
+            <a class="red" href="#"> <img src="img/wa.png" alt="wa" width="30" height="30"></a>
+
+
+        </div>
+    </footer>
+    <!-- <script src="JS/maquinaEscribir.js"> </script> -->
 </body>
 
 </html>

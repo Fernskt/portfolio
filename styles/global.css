@@ -63,9 +63,16 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    transition: background-color .5s;
   
   }
   
+  .boton:hover{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    box-shadow: 0px 0px 20px 1px rgba(236, 151, 246, 0.242); 
+  }
+
   .boton span {
     position: relative;
     z-index: 2;

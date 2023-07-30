@@ -29,14 +29,12 @@ window.addEventListener('scroll', function() {
 
 /*Animacion Maquina de escribir y linea de comando*/
 
-  let i = 0;
-let text = ">Desarrollador web Fullstack Jr.";
 
-function typeWriter() {
+/* function typeWriter() {
   if (i < text.length) {
     document.getElementById("text").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typeWriter, 100);
+    setTimeout(typeWriter(), 100);
   } else {
     // Crea un intervalo de parpadeo cada 500 milisegundos
     setInterval(function() {
@@ -48,4 +46,4 @@ function typeWriter() {
   }
 }
 
-typeWriter();
+typeWriter(); */
