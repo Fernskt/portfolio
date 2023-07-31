@@ -515,6 +515,11 @@ ul {
     }
 }
 
+.proyectoBtn{
+    display: flex;
+    justify-content: space-around;
+}
+
 /* ----------------------------Footer--------------------------------------*/
 @media (min-width: 768px) {
     .footer {
@@ -570,21 +575,32 @@ ul {
 /*---------------------------Contacto-------------------------------*/
 /*------------------------------------------------------------------*/
 
+/* Botones con resplandor */
+
 .redf{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 10rem;
-    height: 4rem;
-    filter: invert();
+    height: 3.5rem;
     padding: .5rem;
     border-radius: 1rem;
     margin: 1.5rem;
-    box-shadow: 0px 0px 20px 1px #21f8054f;
+    box-shadow: 0px 0px 10px 1px #9705f863;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    transition: background-color .3s;
 
+}
+/* Logotipos de redes color negros por defectos, se convierten a blancos */
+.invert{
+    filter: invert();
+}
+
+.redf:hover{
+    background-color: var(--primario);
+    color: var(--blanco);
 }
 
  .hablemos {
