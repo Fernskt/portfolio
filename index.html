@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/particles.css">
 
 </head>
 
@@ -22,8 +23,11 @@
 
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/animaciones.js"></script>
+    <script src="JS/js.js"></script>
 
     <!-- HEADER -->
+
+    
 
     <div class="responsivo">
 
@@ -112,19 +116,20 @@
     </div>
 
     <!-- PORTADA -->
-
-
     <section class="hero">
+ <!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles -->  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+   
+       
         <div class="contenido-hero">
 
-            <h2 class="titulo">Fernando Hasperué </h2>
+            <h2 class="titulo"><strong>Fernando Hasperué</strong></h2>
             <h3 id="text">>Desarrollador web Fullstack</h3>
 
 
 
             <div class="ubicacion">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44"
-                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff3c6d" fill="none"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0c4c9a" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <circle cx="12" cy="11" r="3" />
@@ -533,7 +538,7 @@
 
         </div>
     </footer>
-    <!-- <script src="JS/maquinaEscribir.js"> </script> -->
+    <script src="JS/particles.js"> </script>
 </body>
 
 </html>
