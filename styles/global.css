@@ -1,7 +1,7 @@
 :root {
     --oscuro: #0d0818;
     --primario: #62139b;
-    --secundario: #0c4c9a;
+    --secundario: #1167d0;
     --blanco: #ffffff;
   }
   
@@ -31,6 +31,7 @@
     background-image: linear-gradient(to top, #1b0236 0%, var(--oscuro) 100%);
    
   }
+
   
   /*header{
     display: flex;
