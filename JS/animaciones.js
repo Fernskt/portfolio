@@ -1,31 +1,37 @@
- 
 function animateOnScroll(selector, animationClass) {
   // Obtener todos los elementos con la clase especificada en el selector
   var elements = document.querySelectorAll(selector);
 
-  // Recorrer la lista de elementos
+  // Crear un IntersectionObserver
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        // Añadir la clase de animación para iniciar la animación
+        entry.target.classList.add(animationClass);
+      } else {
+        // Quitar la clase de animación cuando el elemento no está en el área visible
+        entry.target.classList.remove(animationClass);
+      }
+    });
+  });
+
+  // Observar cada elemento
   elements.forEach(function(element) {
-    // Obtener la posición del elemento en la pantalla
-    var elementPosition = element.getBoundingClientRect().top;
-
-    // Obtener la altura de la pantalla
-    var screenHeight = window.innerHeight;
-
-    // Comprobar si el elemento está en el área visible de la pantalla
-    if (elementPosition < screenHeight) {
-      // Añadir la clase especificada en la variable animationClass al elemento para iniciar la animación
-      element.classList.add(animationClass)
-    }
+    observer.observe(element);
   });
 }
 
+// Reiniciar la animación cuando el usuario hace scroll
 window.addEventListener('scroll', function() {
   animateOnScroll('.mi-seccion', 'active');
-});
-
-window.addEventListener('scroll', function() {
+  animateOnScroll('.mi-seccion4', 'active');
   animateOnScroll('.progress-circle', 'animation');
 });
+
+// Llamar a animateOnScroll para inicializar las animaciones
+
+
+
 
 /*Animacion Maquina de escribir y linea de comando*/
 

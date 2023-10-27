@@ -15,7 +15,7 @@
     /* Hack para Box Model*/
     scroll-snap-type: mandatory;
     scroll-behavior: smooth;
-    animation: aparecer 1.5s;
+    
   }
   
   *,
@@ -128,8 +128,8 @@
   
   .mi-seccion {
     /* Estilos de la animación */
-    transition: all 1.5s ease;
-    transform: translateY(100px);
+    transition: all 1.3s ease;
+    transform: translateY(50px);
     opacity: 0;
   }
   
@@ -139,40 +139,31 @@
     opacity: 1;
   }
   
-  .mi-seccion2 {
+
+  .mi-seccion4 {
     /* Estilos de la animación */
-    transition: all 2s ease;
-    transform: translateX(-100px);
-    
+    transition: transform 1.3s ease, opacity 1s ease;
+  transform: scale(0.8);
+  opacity: 0;
   }
   
-  .mi-seccion2.active {
+  .mi-seccion4.active {
     /* Estilos de la animación cuando está activa */
-    transform: translateX(0);
-    
+    transform: scale(1);
+  opacity: 1;
   }
   
-  .mi-seccion3 {
-    /* Estilos de la animación */
-    transition: all 2s ease;
-    transform: translateX(100px);
-    
-  }
-  
-  .mi-seccion3.active {
-    /* Estilos de la animación cuando está activa */
-    transform: translateX(0);
-    
-  }
-  
-  @keyframes aparecer {
+ @keyframes aparecer {
     from {
-        opacity: 0;
+      transition: transform 1.3s ease, opacity 1s ease;
+      transform: scale(0.8);
+      opacity: 0;
     }
   
     to {
-        opacity: 1;
+      transform: scale(1);
+      opacity: 1;
     }
   }
-  
+   
   
